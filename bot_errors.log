@@ -1,0 +1,968 @@
+2025-01-26 16:43:14,873 - __main__ - INFO - Сообщение переслано в группу. message_id: 79, chat_id: 828370520
+2025-01-26 16:46:48,909 - __main__ - INFO - Сообщение переслано в группу. message_id: 84, chat_id: 828370520
+2025-01-26 16:53:11,101 - __main__ - INFO - Сообщение переслано в группу. message_id: 90, chat_id: 828370520
+2025-01-26 17:05:00,310 - __main__ - ERROR - Ошибка при запуске бота: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+2025-01-26 17:05:01,342 - __main__ - ERROR - Не удалось уведомить администратора. Ошибка: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2025-01-26 21:05:30,088 - __main__ - INFO - Сообщение переслано в группу. message_id: 93, chat_id: 828370520
+2025-01-26 21:06:01,314 - __main__ - INFO - Сообщение переслано в группу. message_id: 94, chat_id: 828370520
+2025-01-26 21:10:56,298 - __main__ - INFO - Сообщение переслано в группу. message_id: 95, chat_id: 828370520
+2025-01-26 21:13:51,308 - __main__ - INFO - Сообщение переслано в группу. message_id: 101, chat_id: 828370520
+2025-01-26 21:15:28,487 - __main__ - INFO - Сообщение переслано в группу. message_id: 103, chat_id: 828370520
+2025-01-26 21:19:24,674 - __main__ - INFO - Сообщение в группе: ммм
+2025-01-26 21:20:05,839 - __main__ - INFO - Сообщение в группе: хуй
+2025-01-26 21:27:59,394 - __main__ - INFO - Сообщение переслано в группу. message_id: 109, chat_id: 828370520
+2025-01-26 21:33:28,502 - __main__ - INFO - Сообщение переслано в группу. message_id: 112, chat_id: 828370520
+2025-01-26 21:36:58,541 - __main__ - INFO - Сообщение переслано в группу. message_id: 115, chat_id: 828370520
+2025-01-26 21:46:14,426 - __main__ - INFO - Сообщение в группе: ауа
+2025-01-26 21:49:19,488 - __main__ - INFO - Сообщение переслано в группу. message_id: 120, chat_id: 828370520
+2025-01-26 21:54:51,040 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-26 21:54:59,515 - __main__ - INFO - Сообщение переслано в группу. message_id: 122, chat_id: 828370520
+2025-01-26 21:55:33,695 - __main__ - INFO - Получено сообщение от пользователя 828370520: ауау
+2025-01-26 21:55:50,583 - __main__ - INFO - Получено сообщение от пользователя 828370520: сосать
+2025-01-26 22:00:59,173 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-26 22:01:04,660 - __main__ - INFO - Сообщение переслано в группу. message_id: 125, chat_id: 828370520
+2025-01-26 22:01:07,615 - __main__ - INFO - Получено сообщение от пользователя 828370520: ауау
+2025-01-26 22:01:59,700 - __main__ - INFO - Получено сообщение от пользователя 2111467279: 🤖 Телеграм-бот
+2025-01-26 22:02:16,495 - __main__ - INFO - Сообщение переслано в группу. message_id: 127, chat_id: 2111467279
+2025-01-26 22:02:23,450 - __main__ - INFO - Получено сообщение от пользователя 828370520: байда
+2025-01-26 22:02:47,894 - __main__ - INFO - Сообщение переслано в группу. message_id: 129, chat_id: 2111467279
+2025-01-26 22:02:55,054 - __main__ - INFO - Получено сообщение от пользователя 828370520: отлично
+2025-01-26 22:08:16,542 - __main__ - INFO - Тестовое сообщение отправлено пользователю 828370520.
+2025-01-26 22:08:31,951 - __main__ - INFO - Тестовое сообщение отправлено в группу -1002470195650.
+2025-01-26 22:08:42,377 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-26 22:08:46,678 - __main__ - INFO - Сообщение переслано в группу. message_id: 132, chat_id: 828370520
+2025-01-26 22:08:58,956 - __main__ - INFO - Получено сообщение от пользователя 828370520: Окей
+2025-01-26 22:12:44,937 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-26 22:12:50,030 - __main__ - INFO - Сообщение переслано в группу. message_id: 134, chat_id: 828370520
+2025-01-26 22:12:53,073 - __main__ - INFO - Получено сообщение от пользователя 828370520: ауау
+2025-01-26 22:17:31,704 - __main__ - INFO - Бот запущен.
+2025-01-26 22:17:37,045 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-26 22:17:38,202 - __main__ - INFO - Сообщение переслано в группу. message_id: 136, chat_id: 828370520
+2025-01-26 22:17:38,426 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🤖 Телеграм-бот
+2025-01-26 22:17:39,066 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🔙 Назад
+2025-01-26 22:17:39,276 - __main__ - INFO - Сообщение переслано в группу. message_id: 137, chat_id: 828370520
+2025-01-26 22:17:39,366 - __main__ - INFO - Сообщение переслано в группу. message_id: 138, chat_id: 828370520
+2025-01-26 22:17:46,454 - __main__ - INFO - Получено сообщение от пользователя 828370520: вувау
+2025-01-26 22:17:46,757 - __main__ - INFO - Сообщение переслано в группу. message_id: 140, chat_id: -1002470195650
+2025-01-26 22:18:04,723 - __main__ - INFO - Получено сообщение от пользователя 828370520: ац
+2025-01-26 22:18:04,987 - __main__ - INFO - Сообщение переслано в группу. message_id: 143, chat_id: -1002470195650
+2025-01-26 22:20:19,006 - __main__ - INFO - Бот запущен.
+2025-01-26 22:20:24,911 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-26 22:20:25,559 - __main__ - INFO - Сообщение переслано в группу. message_id: 145, chat_id: 828370520
+2025-01-26 22:20:38,691 - __main__ - INFO - Получено сообщение от пользователя 828370520: Хуй
+2025-01-26 22:20:38,948 - __main__ - INFO - Сообщение переслано в группу. message_id: 147, chat_id: -1002470195650
+2025-01-26 22:21:33,341 - __main__ - INFO - Получено сообщение от пользователя 828370520: аа
+2025-01-26 22:21:34,159 - __main__ - INFO - Сообщение переслано в группу. message_id: 149, chat_id: 828370520
+2025-01-26 22:21:45,802 - __main__ - INFO - Получено сообщение от пользователя 828370520: Аа
+2025-01-26 22:21:46,035 - __main__ - INFO - Сообщение переслано в группу. message_id: 151, chat_id: -1002470195650
+2025-01-26 22:23:11,772 - __main__ - INFO - Бот запущен.
+2025-01-26 22:23:20,041 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-26 22:23:20,772 - __main__ - INFO - Сообщение переслано в группу. message_id: 153, chat_id: 828370520
+2025-01-26 22:23:34,700 - __main__ - INFO - Получено сообщение от пользователя 828370520: Упс
+2025-01-26 22:23:35,552 - __main__ - INFO - Сообщение переслано в группу. message_id: 155, chat_id: -1002470195650
+2025-01-26 22:25:20,000 - __main__ - INFO - Бот запущен.
+2025-01-26 22:25:23,010 - __main__ - INFO - Получено сообщение от пользователя 828370520: ауа
+2025-01-26 22:25:23,910 - __main__ - INFO - Сообщение переслано в группу. message_id: 157, chat_id: 828370520
+2025-01-26 22:25:34,188 - __main__ - INFO - Получено сообщение от пользователя 828370520: Алла
+2025-01-26 22:25:34,386 - __main__ - INFO - Сообщение переслано в группу. message_id: 159, chat_id: -1002470195650
+2025-01-26 22:27:21,232 - __main__ - INFO - Бот запущен.
+2025-01-26 22:27:25,397 - __main__ - INFO - Получено сообщение от пользователя 828370520: ауа
+2025-01-26 22:27:32,637 - __main__ - INFO - Получено сообщение от пользователя 828370520: Ахаха
+2025-01-26 22:30:14,775 - __main__ - INFO - Бот запущен.
+2025-01-26 22:30:18,748 - __main__ - INFO - Получено сообщение от пользователя 828370520: ух
+2025-01-26 22:30:19,454 - __main__ - INFO - Сообщение переслано в группу. message_id: 165, chat_id: 828370520
+2025-01-26 22:30:27,985 - __main__ - INFO - Получено сообщение от пользователя 828370520: Ах
+2025-01-26 22:30:28,230 - __main__ - INFO - Сообщение переслано в группу. message_id: 167, chat_id: -1002470195650
+2025-01-26 22:30:46,213 - __main__ - INFO - Получено сообщение от пользователя 828370520: За
+2025-01-26 22:30:47,070 - __main__ - INFO - Сообщение переслано в группу. message_id: 170, chat_id: -1002470195650
+2025-01-26 22:32:50,273 - __main__ - INFO - Бот запущен.
+2025-01-26 22:32:59,436 - __main__ - INFO - Получено сообщение от пользователя 828370520: му
+2025-01-26 22:33:00,292 - __main__ - INFO - Сообщение переслано в группу. message_id: 172, chat_id: 828370520
+2025-01-26 22:33:09,237 - __main__ - INFO - Получено сообщение от пользователя 828370520: Му
+2025-01-26 22:33:10,292 - __main__ - INFO - Сообщение переслано в группу. message_id: 174, chat_id: -1002470195650
+2025-01-26 22:33:45,786 - __main__ - INFO - Получена команда /start от пользователя 1323534384
+2025-01-26 22:33:50,178 - __main__ - INFO - Получено сообщение от пользователя 1323534384: член
+2025-01-26 22:33:50,473 - __main__ - INFO - Сообщение переслано в группу. message_id: 176, chat_id: 1323534384
+2025-01-26 22:33:56,527 - __main__ - INFO - Получено сообщение от пользователя 828370520: Хуй
+2025-01-26 22:33:56,746 - __main__ - INFO - Сообщение переслано в группу. message_id: 178, chat_id: -1002470195650
+2025-01-26 22:34:01,040 - __main__ - INFO - Получено сообщение от пользователя 1323534384: пиздпц
+2025-01-26 22:34:01,649 - __main__ - INFO - Сообщение переслано в группу. message_id: 180, chat_id: 1323534384
+2025-01-26 22:37:14,061 - __main__ - INFO - Бот запущен.
+2025-01-26 22:37:17,069 - __main__ - INFO - Получено сообщение от пользователя 828370520: ауа
+2025-01-26 22:37:18,014 - __main__ - INFO - Сообщение переслано в группу. message_id: 181, chat_id: 828370520
+2025-01-26 22:37:24,732 - __main__ - INFO - Получено сообщение от пользователя 828370520: Аха
+2025-01-26 22:37:24,929 - __main__ - INFO - Сообщение переслано в группу. message_id: 183, chat_id: -1002470195650
+2025-01-26 22:40:02,571 - __main__ - INFO - Получена команда /start от пользователя 1323534384
+2025-01-26 22:40:13,118 - __main__ - INFO - Получено сообщение от пользователя 1323534384: я твой рот ебал денис
+2025-01-26 22:40:19,134 - __main__ - INFO - Сообщение переслано в группу. message_id: 185, chat_id: 1323534384
+2025-01-26 22:41:54,926 - __main__ - INFO - Бот запущен.
+2025-01-26 22:41:59,780 - __main__ - INFO - Получено сообщение от пользователя 828370520: аау
+2025-01-26 22:42:00,598 - __main__ - INFO - Сообщение переслано в группу. message_id: 186, chat_id: 828370520
+2025-01-26 22:42:07,435 - __main__ - INFO - Получено сообщение от пользователя 828370520: Ау
+2025-01-26 22:42:08,261 - __main__ - INFO - Сообщение переслано в группу. message_id: 188, chat_id: -1002470195650
+2025-01-26 22:42:51,181 - __main__ - INFO - Получено сообщение от пользователя 1323534384: сльвысдыьв
+2025-01-26 22:42:51,448 - __main__ - INFO - Сообщение переслано в группу. message_id: 190, chat_id: 1323534384
+2025-01-26 22:42:54,343 - __main__ - INFO - Получено сообщение от пользователя 828370520: Азаза
+2025-01-26 22:42:54,957 - __main__ - INFO - Сообщение переслано в группу. message_id: 192, chat_id: -1002470195650
+2025-01-26 22:50:53,502 - __main__ - INFO - Бот запущен.
+2025-01-26 22:51:04,444 - __main__ - INFO - Получено сообщение от пользователя 828370520: привет
+2025-01-26 22:51:27,895 - __main__ - INFO - Получено сообщение от пользователя 828370520: Привет
+2025-01-26 22:53:05,003 - __main__ - INFO - Бот запущен.
+2025-01-26 22:53:12,407 - __main__ - INFO - Получено сообщение от пользователя 828370520: Влад
+2025-01-26 22:53:13,285 - __main__ - INFO - Сообщение переслано в группу. message_id: 198, chat_id: 828370520
+2025-01-26 22:53:18,419 - __main__ - INFO - Получено сообщение от пользователя 828370520: Алла
+2025-01-26 22:53:19,871 - __main__ - INFO - Сообщение переслано в группу. message_id: 200, chat_id: -1002470195650
+2025-01-26 23:05:34,919 - __main__ - INFO - Бот запущен.
+2025-01-26 23:05:45,006 - __main__ - INFO - Получено сообщение от пользователя 828370520: Аа
+2025-01-26 23:05:45,699 - __main__ - INFO - Сообщение переслано в группу. message_id: 212, chat_id: 828370520
+2025-01-26 23:05:48,642 - __main__ - INFO - Получено сообщение от пользователя 828370520: Сдал
+2025-01-26 23:05:49,288 - __main__ - INFO - Сообщение переслано в группу. message_id: 214, chat_id: -1002470195650
+2025-01-26 23:08:58,926 - __main__ - INFO - Бот запущен.
+2025-01-26 23:09:07,488 - __main__ - INFO - Получено сообщение от пользователя 828370520: И
+2025-01-26 23:09:08,186 - __main__ - INFO - Сообщение переслано в группу. message_id: 216, chat_id: 828370520
+2025-01-26 23:09:11,799 - __main__ - INFO - Получено сообщение от пользователя 828370520: П
+2025-01-26 23:09:12,053 - __main__ - INFO - Сообщение переслано в группу. message_id: 218, chat_id: -1002470195650
+2025-01-26 23:10:39,763 - __main__ - INFO - Бот запущен.
+2025-01-26 23:10:48,151 - __main__ - INFO - Получено сообщение от пользователя 828370520: А
+2025-01-26 23:10:48,917 - __main__ - INFO - Сообщение переслано в группу. message_id: 220, chat_id: 828370520
+2025-01-26 23:10:52,236 - __main__ - INFO - Получено сообщение от пользователя 828370520: А
+2025-01-26 23:10:52,932 - __main__ - INFO - Сообщение переслано в группу. message_id: 222, chat_id: -1002470195650
+2025-01-26 23:13:02,589 - __main__ - INFO - Бот запущен.
+2025-01-26 23:13:08,700 - __main__ - INFO - Получено сообщение от пользователя 828370520: а
+2025-01-26 23:13:09,364 - __main__ - INFO - Сообщение переслано в группу. message_id: 224, chat_id: 828370520
+2025-01-26 23:13:20,413 - __main__ - INFO - Получено сообщение от пользователя 828370520: А
+2025-01-26 23:13:20,613 - __main__ - INFO - Сообщение переслано в группу. message_id: 226, chat_id: -1002470195650
+2025-01-26 23:16:47,089 - __main__ - ERROR - Ошибка при запуске бота: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+2025-01-26 23:19:43,246 - __main__ - INFO - Бот запущен.
+2025-01-26 23:19:54,349 - __main__ - INFO - Получено сообщение от пользователя 1087968824: П
+2025-01-26 23:19:54,965 - __main__ - INFO - Сообщение переслано в группу. message_id: 229, chat_id: -1002470195650
+2025-01-26 23:25:01,857 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by setWebhook request
+2025-01-26 23:25:01,861 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by setWebhook request
+
+2025-01-26 23:25:05,373 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+2025-01-26 23:25:05,376 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+2025-01-26 23:25:06,030 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+2025-01-26 23:25:06,033 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+2025-01-26 23:25:10,184 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+2025-01-26 23:25:10,188 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+2025-01-26 23:25:12,339 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+2025-01-26 23:25:12,341 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+2025-01-26 23:25:16,503 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+2025-01-26 23:25:16,506 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+2025-01-26 23:25:24,658 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+2025-01-26 23:25:24,661 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+2025-01-26 23:25:40,806 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+2025-01-26 23:25:40,809 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+2025-01-26 23:26:12,966 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+2025-01-26 23:26:12,970 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+
+2025-01-26 23:27:08,870 - __main__ - INFO - Получено сообщение от пользователя 828370520: са
+2025-01-26 23:27:08,870 - __main__ - INFO - Получено сообщение от пользователя 828370520: са
+2025-01-26 23:27:08,871 - __main__ - INFO - Получено сообщение от пользователя 828370520: са
+2025-01-26 23:27:21,340 - __main__ - INFO - Получена команда /start от пользователя 828370520
+2025-01-26 23:27:23,476 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🚀 Проекты
+2025-01-26 23:27:25,531 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-26 23:27:29,676 - __main__ - INFO - Сообщение переслано в группу. message_id: 231, chat_id: 828370520
+2025-01-26 23:28:03,449 - __main__ - INFO - Получено сообщение от пользователя 1087968824: Сам
+2025-01-26 23:32:05,228 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-26 23:32:10,141 - __main__ - INFO - Сообщение переслано в группу. message_id: 233, chat_id: 828370520
+2025-01-26 23:32:39,218 - __main__ - INFO - Получено сообщение от пользователя 1087968824: Опана
+2025-01-26 23:35:40,066 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-26 23:35:45,046 - __main__ - INFO - Сообщение переслано в группу. message_id: 235, chat_id: 828370520
+2025-01-26 23:35:49,895 - __main__ - INFO - Получено сообщение от пользователя 1087968824: Ооо
+2025-01-27 11:14:33,021 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 11:14:37,335 - __main__ - INFO - Сообщение переслано в группу. message_id: 259, chat_id: 828370520
+2025-01-27 11:14:41,379 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 11:14:45,481 - __main__ - INFO - Сообщение переслано в группу. message_id: 2, chat_id: 828370520
+2025-01-27 11:14:52,491 - __main__ - INFO - Сообщение переслано в группу. message_id: 3, chat_id: 828370520
+2025-01-27 11:14:57,110 - __main__ - INFO - Сообщение переслано в группу. message_id: 3, chat_id: 828370520
+2025-01-27 11:16:09,624 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🤖 Телеграм-бот
+2025-01-27 11:16:13,805 - __main__ - INFO - Сообщение переслано в группу. message_id: 260, chat_id: 828370520
+2025-01-27 11:26:13,674 - __main__ - INFO - Получено сообщение от пользователя 828370520: -1002378648588
+2025-01-27 11:26:36,305 - __main__ - INFO - Получено сообщение от пользователя 828370520: -1002290464540
+2025-01-27 11:26:58,548 - __main__ - INFO - Получено сообщение от пользователя 828370520: -1002308590585
+2025-01-27 11:27:16,863 - __main__ - INFO - Получено сообщение от пользователя 828370520: -1002454219978
+2025-01-27 11:32:24,004 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🤖 Телеграм-бот
+2025-01-27 11:32:27,637 - __main__ - INFO - Сообщение переслано в группу. message_id: 3, chat_id: 828370520
+2025-01-27 11:32:43,224 - __main__ - INFO - Сообщение переслано в группу. message_id: 3, chat_id: 828370520
+2025-01-27 11:33:52,790 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🤖 Телеграм-бот
+2025-01-27 11:38:46,233 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 11:44:07,227 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 12:45:31,694 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 12:45:46,831 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 12:46:03,011 - __main__ - INFO - Сообщение переслано в группу. message_id: 3, chat_id: 828370520
+2025-01-27 12:47:35,286 - __main__ - INFO - Получено сообщение от пользователя 2111467279: 🤖 Телеграм-бот
+2025-01-27 12:47:49,015 - __main__ - INFO - Сообщение переслано в группу. message_id: 3, chat_id: 2111467279
+2025-01-27 12:48:00,035 - __main__ - INFO - Сообщение переслано в группу. message_id: 4, chat_id: 2111467279
+2025-01-27 12:49:06,015 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🤖 Телеграм-бот
+2025-01-27 12:49:11,521 - __main__ - INFO - Сообщение переслано в группу. message_id: 3, chat_id: 2111467279
+2025-01-27 12:52:06,927 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 12:52:22,891 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 12:52:25,148 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🤖 Телеграм-бот
+2025-01-27 12:53:50,991 - __main__ - INFO - Сообщение переслано в группу. message_id: 4, chat_id: 828370520
+2025-01-27 13:10:32,549 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-27 13:10:32,554 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-01-27 13:10:36,293 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-27 13:10:36,294 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-01-27 17:37:59,837 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-27 17:37:59,841 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-01-27 17:38:11,097 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 17:38:25,746 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 17:38:40,301 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 17:38:44,132 - __main__ - INFO - Получено сообщение от пользователя 828370520: 🌐 Сайт metelykx.space
+2025-01-27 17:41:46,170 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-27 17:41:46,174 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-01-27 17:41:50,733 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-27 17:41:50,735 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-01-27 17:41:55,328 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-01-27 17:41:55,329 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-05-07 21:42:17,135 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 21:42:17,137 - TeleBot - ERROR - Break infinity polling
+2025-05-07 21:43:20,463 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 21:43:20,464 - TeleBot - ERROR - Break infinity polling
+2025-05-07 21:44:31,752 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 21:44:31,754 - TeleBot - ERROR - Break infinity polling
+2025-05-07 21:46:30,833 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 21:46:30,835 - TeleBot - ERROR - Break infinity polling
+2025-05-07 21:47:47,089 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 21:47:47,090 - TeleBot - ERROR - Break infinity polling
+2025-05-07 21:49:13,260 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 21:49:13,262 - TeleBot - ERROR - Break infinity polling
+2025-05-07 21:49:51,498 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 21:49:51,500 - TeleBot - ERROR - Break infinity polling
+2025-05-07 21:50:31,136 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 21:50:31,138 - TeleBot - ERROR - Break infinity polling
+2025-05-07 21:50:51,400 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 21:50:51,401 - TeleBot - ERROR - Break infinity polling
+2025-05-07 21:51:10,680 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 21:51:10,682 - TeleBot - ERROR - Break infinity polling
+2025-05-07 22:11:05,204 - TeleBot - ERROR - Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+2025-05-07 22:11:05,213 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1278, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1134, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 538, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 369, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1110, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+2025-05-07 22:25:50,872 - TeleBot - ERROR - Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+2025-05-07 22:25:50,879 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1278, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1134, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 538, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 369, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1110, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+2025-05-07 22:25:56,586 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 22:25:56,587 - TeleBot - ERROR - Break infinity polling
+2025-05-07 22:53:39,874 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 22:53:39,876 - TeleBot - ERROR - Break infinity polling
+2025-05-07 22:54:39,875 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 22:54:39,876 - TeleBot - ERROR - Break infinity polling
+2025-05-07 22:55:09,469 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 22:55:09,470 - TeleBot - ERROR - Break infinity polling
+2025-05-07 22:55:39,743 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 22:55:39,744 - TeleBot - ERROR - Break infinity polling
+2025-05-07 22:56:28,993 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 22:56:28,994 - TeleBot - ERROR - Break infinity polling
+2025-05-07 22:56:41,420 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 22:56:41,421 - TeleBot - ERROR - Break infinity polling
+2025-05-07 22:56:57,048 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 22:56:57,049 - TeleBot - ERROR - Break infinity polling
+2025-05-07 22:57:44,413 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 22:57:44,415 - TeleBot - ERROR - Break infinity polling
+2025-05-07 22:58:13,658 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 22:58:13,659 - TeleBot - ERROR - Break infinity polling
+2025-05-07 23:03:18,356 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 23:03:18,359 - TeleBot - ERROR - Break infinity polling
+2025-05-07 23:04:01,153 - __main__ - ERROR - Feedback error: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 68
+2025-05-07 23:19:10,870 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 23:19:10,873 - TeleBot - ERROR - Break infinity polling
+2025-05-07 23:43:22,144 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 23:43:22,148 - TeleBot - ERROR - Break infinity polling
+2025-05-07 23:51:18,839 - TeleBot - ERROR - Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+2025-05-07 23:51:18,845 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1278, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1134, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 538, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 369, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1110, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+2025-05-07 23:57:39,598 - TeleBot - ERROR - Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+2025-05-07 23:57:39,606 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1278, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1134, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 538, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 369, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1110, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1198, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1273, in __threaded_polling
+    raise e
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 111, in raise_exceptions
+    raise self.exception_info
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/__init__.py", line 660, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 332, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denisivaschenko/PycharmProjects/kefteme/venv/lib/python3.11/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+2025-05-07 23:59:52,406 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-07 23:59:52,409 - TeleBot - ERROR - Break infinity polling
+2025-05-08 00:08:10,511 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-08 00:08:10,516 - TeleBot - ERROR - Break infinity polling
+2025-05-08 00:11:18,846 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-08 00:11:18,849 - TeleBot - ERROR - Break infinity polling
+2025-05-08 00:12:48,482 - TeleBot - ERROR - Infinity polling: polling exited
+2025-05-08 00:12:48,483 - TeleBot - ERROR - Break infinity polling

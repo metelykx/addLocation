@@ -1,0 +1,429 @@
+Color,Type,Petal_Size,Petal_Width
+Red,Tropical,5.0,2.5
+Blue,Meadow,4.8,2.0
+Yellow,Garden,6.2,3.1
+Green,Mountain,5.4,2.3
+Red,Tropical,5.3,2.4
+Blue,Garden,6.0,2.8
+Yellow,Mountain,5.7,2.6
+Green,Meadow,4.9,2.1
+Red,Mountain,5.1,2.2
+Blue,Tropical,5.6,2.7
+White,Meadow,6.5,3.0
+Orange,Garden,5.8,2.9
+Pink,Mountain,5.2,2.3
+Lavender,Meadow,4.7,1.9
+Purple,Garden,6.1,3.0
+Sky Blue,Tropical,5.5,2.6
+Yellow,Meadow,4.6,2.2
+Red,Garden,5.9,3.2
+Orange,Mountain,5.0,2.4
+White,Tropical,6.3,3.1
+Pink,Meadow,4.9,2.4
+Green,Garden,5.4,2.7
+Blue,Mountain,5.7,2.5
+Lavender,Tropical,5.2,2.1
+Red,Tropical,5.0,2.5
+Blue,Meadow,4.8,2.0
+Yellow,Garden,6.2,3.1
+Green,Mountain,5.4,2.3
+Red,Tropical,5.3,2.4
+Blue,Garden,6.0,2.8
+Yellow,Mountain,5.7,2.6
+Green,Meadow,4.9,2.1
+Red,Mountain,5.1,2.2
+Blue,Tropical,5.6,2.7
+White,Meadow,6.5,3.0
+Orange,Garden,5.8,2.9
+Pink,Mountain,5.2,2.3
+Lavender,Meadow,4.7,1.9
+Purple,Garden,6.1,3.0
+Sky Blue,Tropical,5.5,2.6
+Yellow,Meadow,4.6,2.2
+Red,Garden,5.9,3.2
+Orange,Mountain,5.0,2.4
+White,Tropical,6.3,3.1
+Pink,Meadow,4.9,2.4
+Green,Garden,5.4,2.7
+Blue,Mountain,5.7,2.5
+Lavender,Tropical,5.2,2.1
+Sky Blue,Mountain,6.0,2.8
+Purple,Meadow,5.3,2.3
+Orange,Meadow,4.8,2.0
+Red,Mountain,5.1,2.5
+Pink,Tropical,5.4,2.6
+Purple,Garden,5.9,3.3
+White,Mountain,6.1,3.0
+Sky Blue,Meadow,5.0,2.2
+Yellow,Tropical,6.4,3.2
+Orange,Garden,5.5,2.7
+Green,Tropical,5.2,2.4
+Blue,Garden,5.8,2.6
+Lavender,Mountain,5.0,2.2
+Sky Blue,Garden,6.3,3.0
+Purple,Mountain,5.7,2.9
+Red,Tropical,5.2,2.4
+Blue,Mountain,5.4,2.6
+Yellow,Meadow,5.1,2.3
+White,Garden,6.0,2.9
+Orange,Tropical,5.3,2.5
+Pink,Mountain,5.6,2.8
+Lavender,Meadow,4.7,1.8
+Purple,Garden,6.2,3.1
+Sky Blue,Mountain,5.0,2.4
+Yellow,Garden,5.9,3.0
+Red,Meadow,5.4,2.2
+Yellow,Desert,5.7,3.1
+Red,Valley,5.2,2.5
+Blue,Beach,5.0,2.3
+Green,Forest,6.2,3.4
+Pink,Desert,5.1,2.7
+Orange,Valley,5.4,2.9
+Lavender,Beach,5.3,2.5
+Sky Blue,Desert,5.5,2.9
+Purple,Valley,5.0,2.2
+White,Forest,5.6,2.8
+Orange,Beach,5.8,3.0
+Pink,Valley,5.7,2.8
+Lavender,Forest,4.9,2.4
+Sky Blue,Valley,5.4,2.3
+Purple,Beach,5.6,2.7
+Red,Desert,5.3,2.6
+Green,Valley,5.1,2.4
+Yellow,Beach,5.0,2.2
+Blue,Forest,5.9,3.1
+Pink,Desert,5.4,2.6
+Orange,Valley,5.2,2.4
+Lavender,Forest,5.7,2.6
+Sky Blue,Beach,5.3,2.7
+Purple,Desert,5.1,2.3
+Red,Forest,5.5,2.7
+Green,Desert,5.9,3.2
+Yellow,Valley,5.4,2.8
+Blue,Valley,5.2,2.4
+Pink,Beach,5.6,2.9
+Orange,Desert,5.1,2.7
+Lavender,Valley,5.3,2.5
+Sky Blue,Forest,5.7,2.8
+Purple,Desert,5.2,2.3
+White,Beach,6.0,2.9
+Orange,Forest,5.8,2.6
+Pink,Forest,5.5,2.8
+Lavender,Valley,4.8,2.1
+Sky Blue,Beach,5.4,2.8
+Purple,Forest,6.1,3.0
+Red,Desert,5.0,2.4
+Blue,Valley,5.6,2.7
+Yellow,Forest,5.1,2.5
+Green,Desert,5.9,3.3
+Pink,Valley,5.2,2.6
+Orange,Beach,5.4,2.8
+Lavender,Forest,5.0,2.2
+Sky Blue,Valley,5.5,2.9
+Purple,Beach,5.3,2.6
+White,Desert,6.3,3.1
+Orange,Valley,5.7,2.9
+Pink,Forest,5.6,2.8
+Lavender,Desert,4.9,2.3
+Sky Blue,Beach,5.6,2.9
+Purple,Forest,5.0,2.5
+Red,Valley,5.3,2.8
+Blue,Desert,5.7,2.9
+Yellow,Beach,5.2,2.4
+Green,Forest,6.2,3.2
+Pink,Valley,5.3,2.5
+Orange,Desert,5.8,2.7
+Lavender,Beach,5.5,2.7
+Sky Blue,Valley,5.7,2.9
+Purple,Desert,5.2,2.6
+White,Forest,6.1,3.3
+Orange,Valley,5.6,2.8
+Pink,Forest,5.7,2.9
+Lavender,Valley,4.7,2.2
+Sky Blue,Desert,5.3,2.7
+Purple,Beach,6.0,3.1
+Red,Valley,5.2,2.6
+Blue,Desert,5.8,2.7
+Yellow,Forest,5.3,2.6
+Green,Beach,5.5,2.8
+Pink,Valley,5.1,2.4
+Orange,Forest,5.7,2.9
+Lavender,Desert,5.3,2.6
+Sky Blue,Beach,5.4,2.8
+Purple,Valley,5.5,2.7
+White,Forest,6.2,3.0
+Orange,Desert,5.8,2.9
+Pink,Beach,5.4,2.6
+Lavender,Valley,4.9,2.3
+Sky Blue,Desert,5.3,2.7
+Purple,Forest,5.0,2.5
+Red,Valley,5.6,2.8
+Blue,Desert,5.2,2.7
+Yellow,Forest,5.4,2.8
+Green,Beach,5.6,2.9
+Pink,Valley,5.1,2.5
+Orange,Forest,5.9,2.9
+Lavender,Desert,5.0,2.4
+Sky Blue,Beach,5.7,2.8
+Purple,Valley,5.3,2.6
+White,Forest,6.0,2.9
+Orange,Desert,5.6,2.7
+Pink,Beach,5.8,3.0
+Lavender,Valley,4.9,2.2
+Sky Blue,Desert,5.4,2.8
+Purple,Forest,5.1,2.5
+Red,Valley,5.7,2.9
+Blue,Desert,5.5,2.8
+Yellow,Beach,5.2,2.6
+Green,Forest,5.8,3.1
+Pink,Desert,5.4,2.7
+Orange,Valley,5.1,2.5
+Lavender,Beach,5.3,2.6
+Sky Blue,Desert,5.7,2.8
+Purple,Valley,5.2,2.6
+White,Forest,6.1,3.1
+Orange,Beach,5.9,2.9
+Pink,Forest,5.6,2.7
+Lavender,Valley,4.8,2.4
+Sky Blue,Desert,5.3,2.7
+Purple,Forest,5.4,2.7
+Red,Valley,5.5,2.8
+Blue,Desert,5.2,2.6
+Yellow,Forest,5.6,3.0
+Green,Beach,5.4,2.7
+Pink,Valley,5.0,2.4
+Orange,Forest,5.8,2.9
+Lavender,Desert,5.2,2.5
+Sky Blue,Beach,5.4,2.8
+Purple,Valley,5.6,2.9
+White,Forest,6.2,3.2
+Orange,Beach,5.3,2.7
+Pink,Desert,5.7,2.9
+Lavender,Valley,4.9,2.6
+Yellow,Garden,5.9,3.0
+Red,Meadow,5.4,2.2
+Blue,Tropical,5.1,2.3
+Green,Mountain,6.0,3.0
+Pink,Meadow,5.2,2.5
+Orange,Mountain,5.4,2.8
+Lavender,Garden,5.3,2.6
+Sky Blue,Tropical,5.6,2.7
+Purple,Meadow,5.0,2.2
+White,Mountain,5.5,2.7
+Orange,Garden,5.8,2.9
+Pink,Mountain,5.7,2.6
+Lavender,Meadow,4.9,2.1
+Sky Blue,Mountain,5.4,2.3
+Purple,Tropical,5.6,2.8
+Red,Garden,5.3,2.6
+Green,Meadow,5.2,2.4
+Yellow,Mountain,5.1,2.2
+Blue,Garden,5.9,3.0
+Pink,Tropical,5.4,2.5
+Orange,Mountain,5.2,2.4
+Lavender,Garden,5.7,2.6
+Sky Blue,Tropical,5.3,2.5
+Purple,Meadow,5.1,2.3
+Red,Mountain,5.5,2.7
+Green,Garden,5.9,3.0
+Yellow,Tropical,5.4,2.9
+Blue,Meadow,5.2,2.4
+Pink,Mountain,5.6,2.8
+Orange,Tropical,5.1,2.6
+Lavender,Mountain,5.3,2.5
+Sky Blue,Garden,5.7,2.8
+Purple,Tropical,5.2,2.3
+White,Meadow,6.0,2.1
+Orange,Garden,5.8,2.2
+Pink,Garden,5.5,2.3
+Lavender,Meadow,4.9,2.4
+Sky Blue,Mountain,5.3,5.7
+Purple,Garden,6.1,3.6
+Red,Tropical,5.0,2.8
+Blue,Mountain,5.6,2.9
+Yellow,Meadow,5.1,2.1
+Green,Garden,5.9,3.2
+Pink,Tropical,5.3,3.4
+Red,Tropical,5.1,2.7
+Blue,Meadow,4.9,2.3
+Yellow,Garden,6.0,2.9
+Green,Mountain,5.5,2.4
+Red,Tropical,5.4,2.6
+Blue,Garden,6.1,2.7
+Yellow,Mountain,5.8,2.5
+Green,Meadow,5.0,2.2
+Red,Mountain,5.2,2.1
+Blue,Tropical,5.7,2.8
+White,Meadow,6.6,3.1
+Orange,Garden,5.9,2.8
+Pink,Mountain,5.3,2.4
+Lavender,Meadow,4.8,2.0
+Purple,Garden,6.2,3.1
+Sky Blue,Tropical,5.6,2.7
+Yellow,Meadow,4.7,2.1
+Red,Garden,6.0,3.3
+Orange,Mountain,5.1,2.5
+White,Tropical,6.4,3.2
+Pink,Meadow,5.0,2.3
+Green,Garden,5.5,2.6
+Blue,Mountain,5.9,2.8
+Lavender,Tropical,5.3,2.2
+Sky Blue,Mountain,6.1,3.0
+Purple,Meadow,5.4,2.5
+Orange,Meadow,4.9,2.1
+Red,Mountain,5.3,2.7
+Pink,Tropical,5.5,2.9
+Purple,Garden,6.0,3.4
+White,Mountain,6.2,3.2
+Sky Blue,Meadow,5.1,2.5
+Yellow,Tropical,6.3,3.1
+Orange,Garden,5.6,2.9
+Green,Tropical,5.3,2.5
+Blue,Garden,5.9,2.9
+Lavender,Mountain,5.1,2.4
+Sky Blue,Garden,6.2,3.1
+Purple,Mountain,5.8,2.9
+Red,Tropical,5.3,2.6
+Blue,Mountain,5.5,2.8
+Yellow,Meadow,5.0,2.3
+White,Garden,6.1,3.0
+Orange,Tropical,5.4,2.7
+Pink,Mountain,5.7,3.0
+Lavender,Meadow,4.6,2.0
+Purple,Garden,6.3,3.2
+Sky Blue,Mountain,5.0,2.5
+Yellow,Garden,6.0,3.0
+Red,Meadow,5.5,2.4
+Blue,Tropical,5.2,2.6
+Green,Mountain,6.2,3.3
+Pink,Meadow,5.4,2.6
+Orange,Mountain,5.7,3.0
+Lavender,Garden,5.4,2.8
+Sky Blue,Tropical,5.8,2.9
+Purple,Meadow,5.1,2.4
+White,Mountain,5.6,2.8
+Orange,Garden,5.9,2.9
+Pink,Mountain,5.6,2.7
+Lavender,Meadow,4.7,2.2
+Sky Blue,Mountain,5.6,2.7
+Purple,Tropical,5.7,2.8
+Red,Garden,5.4,2.6
+Green,Meadow,5.3,2.5
+Yellow,Mountain,5.2,2.4
+Blue,Garden,5.8,3.0
+Pink,Tropical,5.5,2.8
+Orange,Mountain,5.4,2.6
+Lavender,Garden,5.7,2.9
+Sky Blue,Tropical,5.4,2.6
+Purple,Meadow,5.2,2.5
+Red,Mountain,5.6,2.9
+Green,Garden,5.8,3.1
+Yellow,Tropical,5.5,3.0
+Blue,Meadow,5.3,2.6
+Pink,Mountain,5.8,3.1
+Orange,Tropical,5.3,2.8
+Lavender,Mountain,5.5,2.8
+Sky Blue,Garden,5.8,3.0
+Purple,Tropical,5.5,2.8
+White,Meadow,6.2,3.3
+Orange,Garden,5.6,2.7
+Pink,Garden,5.7,2.9
+Lavender,Meadow,4.9,2.5
+Sky Blue,Mountain,5.4,2.9
+Purple,Garden,6.4,3.4
+Red,Tropical,5.2,2.7
+Blue,Mountain,5.7,2.8
+Yellow,Meadow,5.3,2.6
+Green,Garden,6.0,3.3
+Pink,Tropical,5.4,2.9
+Orange,Garden,5.4,2.8
+Lavender,Mountain,5.1,2.5
+Sky Blue,Garden,5.9,3.1
+Purple,Tropical,5.6,2.9
+Red,Mountain,5.5,2.8
+Blue,Tropical,5.1,2.7
+Yellow,Meadow,5.7,2.9
+Green,Tropical,5.4,3.0
+Pink,Garden,5.6,3.0
+Orange,Tropical,5.2,2.9
+Lavender,Mountain,5.4,2.7
+Sky Blue,Garden,5.7,3.0
+Purple,Tropical,5.5,2.8
+White,Meadow,6.1,3.2
+Orange,Garden,5.6,2.8
+Pink,Mountain,5.9,3.1
+Lavender,Tropical,5.4,2.9
+Sky Blue,Mountain,5.2,2.6
+Purple,Meadow,5.3,2.7
+Sky Blue,Tropical,5.6,2.9
+Yellow,Meadow,4.8,2.2
+Red,Garden,5.9,3.1
+Orange,Mountain,5.1,2.7
+White,Tropical,6.4,3.3
+Pink,Meadow,5.0,2.5
+Green,Garden,5.5,2.9
+Blue,Mountain,5.7,2.8
+Lavender,Tropical,5.3,2.3
+Sky Blue,Mountain,6.0,3.1
+Purple,Meadow,5.4,2.6
+Orange,Meadow,4.9,2.1
+Red,Mountain,5.3,2.6
+Pink,Tropical,5.5,2.9
+Purple,Garden,6.2,3.3
+White,Mountain,6.3,3.2
+Sky Blue,Meadow,5.2,2.6
+Yellow,Tropical,6.5,3.4
+Orange,Garden,5.8,2.9
+Green,Tropical,5.3,2.8
+Blue,Garden,5.9,2.8
+Lavender,Mountain,5.2,2.5
+Sky Blue,Garden,6.3,3.2
+Purple,Mountain,5.9,3.0
+Red,Tropical,5.3,2.7
+Blue,Mountain,5.6,2.9
+Yellow,Meadow,5.2,2.5
+White,Garden,6.0,3.1
+Orange,Tropical,5.3,2.8
+Pink,Mountain,5.6,2.9
+Lavender,Meadow,4.8,2.2
+Purple,Garden,6.2,3.4
+Sky Blue,Mountain,5.0,2.6
+Yellow,Garden,5.9,3.0
+Red,Meadow,5.4,2.3
+Blue,Tropical,5.2,2.6
+Green,Mountain,6.1,3.2
+Pink,Meadow,5.2,2.5
+Orange,Mountain,5.6,2.9
+Lavender,Garden,5.5,2.7
+Sky Blue,Tropical,5.7,3.0
+Purple,Meadow,5.2,2.5
+White,Mountain,5.6,2.8
+Orange,Garden,5.8,3.0
+Pink,Mountain,5.8,2.9
+Lavender,Meadow,4.9,2.3
+Sky Blue,Mountain,5.5,2.7
+Purple,Tropical,5.6,3.0
+Red,Garden,5.5,2.8
+Green,Meadow,5.2,2.4
+Yellow,Mountain,5.2,2.5
+Blue,Garden,5.9,3.1
+Pink,Tropical,5.6,2.9
+Orange,Mountain,5.3,2.8
+Lavender,Garden,5.7,2.9
+Sky Blue,Tropical,5.6,3.0
+Purple,Meadow,5.3,2.6
+Red,Mountain,5.7,2.9
+Green,Garden,5.9,3.1
+Yellow,Tropical,5.4,3.0
+Blue,Meadow,5.4,2.7
+Pink,Mountain,5.7,2.8
+Orange,Tropical,5.4,2.9
+Lavender,Mountain,5.4,2.8
+Sky Blue,Garden,5.9,3.1
+Purple,Tropical,5.3,2.8
+White,Meadow,6.2,3.3
+Orange,Garden,5.6,2.7
+Pink,Garden,5.7,2.9
+Lavender,Meadow,4.9,2.5
+Sky Blue,Mountain,5.4,2.9
+Purple,Garden,6.4,3.4
