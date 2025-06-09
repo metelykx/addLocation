@@ -16,16 +16,21 @@ from telegram.ext import (
 BOT_TOKEN = "7477798413:AAH0hRlFEEWCtrxqwKeHYifaGlhS-j5jCLY"
 ADMIN_LOGIN = "putevod-admin"
 ADMIN_PASSWORD = "Jingle2018"
-ATTRACTIONS_FILE = "attractions.json"
+LANDMARKS_FILE = "landmarks.json"
 SESSIONS_FILE = "sessions.json"
 
 # Состояния диалога
-LOGIN, PASSWORD, NAME, DESCRIPTION, LOCATION, PHOTOS = range(6)
+(
+    LOGIN, PASSWORD,
+    NAME, ADDRESS, CATEGORY,
+    DESCRIPTION, HISTORY,
+    LOCATION, PHOTOS
+) = range(9)
 
 # Хранилища данных
 authorized_users = set()
 temp_data = {}
-attractions = {}
+landmarks = {}
 sessions = {}
 
 # Клавиатура для продолжения
@@ -35,28 +40,39 @@ continue_keyboard = ReplyKeyboardMarkup(
     one_time_keyboard=True
 )
 
+# Категории для клавиатуры
+categories_keyboard = ReplyKeyboardMarkup(
+    [
+        ["Природа", "История"],
+        ["Архитектура", "Искусство"],
+        ["Религия", "Другое"]
+    ],
+    resize_keyboard=True,
+    one_time_keyboard=True
+)
+
 
 # Инициализация хранилища
 def init_storage():
-    global attractions, sessions
+    global landmarks, sessions
 
     # Загрузка достопримечательностей
-    if os.path.exists(ATTRACTIONS_FILE):
+    if os.path.exists(LANDMARKS_FILE):
         try:
-            with open(ATTRACTIONS_FILE, 'r', encoding='utf-8') as f:
-                attractions = json.load(f)
+            with open(LANDMARKS_FILE, 'r', encoding='utf-8') as f:
+                landmarks = json.load(f)
         except Exception as e:
-            logging.error(f"Ошибка загрузки attractions.json: {e}")
-            attractions = {}
+            logging.error(f"Ошибка загрузки landmarks.json: {e}")
+            landmarks = {}
     else:
-        attractions = {}
+        landmarks = {}
 
     # Загрузка сессий
     if os.path.exists(SESSIONS_FILE):
         try:
             with open(SESSIONS_FILE, 'r', encoding='utf-8') as f:
                 sessions = json.load(f)
-                # Преобразование ключей в int (JSON сохраняет ключи словарей как строки)
+                # Преобразование ключей в int
                 sessions = {int(k): v for k, v in sessions.items()}
         except Exception as e:
             logging.error(f"Ошибка загрузки sessions.json: {e}")
@@ -78,14 +94,17 @@ def init_storage():
 
 
 # Сохранение достопримечательности
-def save_attraction(name, description, latitude, longitude, photos):
+def save_landmark(name, address, category, description, history, latitude, longitude, photos):
     # Проверка на уникальность названия
-    if name in attractions:
+    if name in landmarks:
         return False
 
     # Создание новой записи
-    attractions[name] = {
+    landmarks[name] = {
+        "address": address,
+        "category": category,
         "description": description,
+        "history": history,
         "latitude": latitude,
         "longitude": longitude,
         "photos": photos,
@@ -94,8 +113,8 @@ def save_attraction(name, description, latitude, longitude, photos):
 
     # Сохранение в файл
     try:
-        with open(ATTRACTIONS_FILE, 'w', encoding='utf-8') as f:
-            json.dump(attractions, f, ensure_ascii=False, indent=2)
+        with open(LANDMARKS_FILE, 'w', encoding='utf-8') as f:
+            json.dump(landmarks, f, ensure_ascii=False, indent=2)
         return True
     except Exception as e:
         logging.error(f"Ошибка сохранения достопримечательности: {e}")
@@ -178,7 +197,7 @@ async def password(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
     if user_input == ADMIN_PASSWORD:
         authorized_users.add(chat_id)
-        save_session(chat_id)  # Сохраняем сессию
+        save_session(chat_id)
 
         await update.message.reply_text(
             "🔓 Авторизация успешна!\n\n"
@@ -194,17 +213,44 @@ async def password(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 async def name(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     chat_id = update.effective_chat.id
     temp_data[chat_id] = {"name": update.message.text}
-    await update.message.reply_text("📝 Введите описание достопримечательности:")
+    await update.message.reply_text("🏠 Введите адрес достопримечательности:")
+    return ADDRESS
+
+
+async def address(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    chat_id = update.effective_chat.id
+    temp_data[chat_id]["address"] = update.message.text
+    await update.message.reply_text(
+        "📌 Выберите категорию достопримечательности:",
+        reply_markup=categories_keyboard
+    )
+    return CATEGORY
+
+
+async def category(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    chat_id = update.effective_chat.id
+    temp_data[chat_id]["category"] = update.message.text
+    await update.message.reply_text(
+        "📝 Введите описание достопримечательности:",
+        reply_markup=ReplyKeyboardRemove()
+    )
     return DESCRIPTION
 
 
 async def description(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     chat_id = update.effective_chat.id
     temp_data[chat_id]["description"] = update.message.text
+    await update.message.reply_text("📜 Введите историческую справку:")
+    return HISTORY
+
+
+async def history(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    chat_id = update.effective_chat.id
+    temp_data[chat_id]["history"] = update.message.text
     await update.message.reply_text(
         "📍 Введите координаты достопримечательности в формате:\n"
         "<i>широта, долгота</i>\n\n"
-        "Пример: <code>55.755826, 37.617300</code>",
+        "Пример: <code>44.511777, 34.233452</code>",
         parse_mode="HTML"
     )
     return LOCATION
@@ -232,7 +278,7 @@ async def location(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         await update.message.reply_text(
             "❌ Неверный формат координат. Пожалуйста, введите в формате:\n"
             "<i>широта, долгота</i>\n\n"
-            "Пример: <code>55.755826, 37.617300</code>",
+            "Пример: <code>44.511777, 34.233452</code>",
             parse_mode="HTML"
         )
         return LOCATION
@@ -247,12 +293,27 @@ async def photos(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         return PHOTOS
 
     file_ids = [photo.file_id for photo in photos[:3]]
-    name = temp_data[chat_id]["name"]
-    description = temp_data[chat_id]["description"]
-    lat, lon = temp_data[chat_id]["location"]
+
+    # Получаем все собранные данные
+    data = temp_data[chat_id]
+    name = data["name"]
+    address = data["address"]
+    category = data["category"]
+    description = data["description"]
+    history = data["history"]
+    lat, lon = data["location"]
 
     # Сохраняем в JSON
-    success = save_attraction(name, description, lat, lon, file_ids)
+    success = save_landmark(
+        name=name,
+        address=address,
+        category=category,
+        description=description,
+        history=history,
+        latitude=lat,
+        longitude=lon,
+        photos=file_ids
+    )
 
     if not success:
         await update.message.reply_text(
@@ -268,7 +329,10 @@ async def photos(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await update.message.reply_text(
         f"✅ Достопримечательность сохранена!\n\n"
         f"<b>Название:</b> {name}\n"
+        f"<b>Адрес:</b> {address}\n"
+        f"<b>Категория:</b> {category}\n"
         f"<b>Описание:</b> {description}\n"
+        f"<b>История:</b> {history}\n"
         f"<b>Координаты:</b> {lat:.6f}, {lon:.6f}\n\n"
         "Хотите добавить еще одну достопримечательность?",
         parse_mode="HTML",
@@ -340,7 +404,10 @@ def main() -> None:
             LOGIN: [MessageHandler(filters.TEXT & ~filters.COMMAND, login)],
             PASSWORD: [MessageHandler(filters.TEXT & ~filters.COMMAND, password)],
             NAME: [MessageHandler(filters.TEXT & ~filters.COMMAND, name)],
+            ADDRESS: [MessageHandler(filters.TEXT & ~filters.COMMAND, address)],
+            CATEGORY: [MessageHandler(filters.TEXT & ~filters.COMMAND, category)],
             DESCRIPTION: [MessageHandler(filters.TEXT & ~filters.COMMAND, description)],
+            HISTORY: [MessageHandler(filters.TEXT & ~filters.COMMAND, history)],
             LOCATION: [MessageHandler(filters.TEXT & ~filters.COMMAND, location)],
             PHOTOS: [MessageHandler(filters.PHOTO, photos)]
         },
