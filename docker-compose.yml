@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: telegram_bot
+    volumes:
+      - ./images:/app/images
+      - ./.env:/app/.env
+    restart: unless-stopped
+    network_mode: "host"  # Используем сеть хоста для доступа к локальной базе данных
+
+
+volumes:
+  postgres_data:
+
+networks:
+  bot_network:
+    driver: bridge 
