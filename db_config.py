@@ -5,8 +5,9 @@ from typing import Optional, List, Tuple
 from datetime import datetime
 import os
 import shutil
-from telegram import Bot
+from telegram import Bot, Update
 from dotenv import load_dotenv
+from telegram.ext import ContextTypes
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -46,10 +47,19 @@ if missing_vars:
 # Connection pool
 connection_pool = None
 
-# Create images directory if it doesn't exist
-IMAGES_DIR = "images"
+# Получаем путь к директории для изображений из .env
+IMAGES_DIR = os.getenv('IMAGES_DIR', 'images') 
+
+# Создаем директорию, если она не существует
 if not os.path.exists(IMAGES_DIR):
-    os.makedirs(IMAGES_DIR)
+    try:
+        os.makedirs(IMAGES_DIR)
+        logger.info(f"Created images directory at: {IMAGES_DIR}")
+    except Exception as e:
+        logger.error(f"Failed to create images directory: {e}")
+        raise
+else:
+    logger.info(f"Images directory exists: {IMAGES_DIR}")
 
 def init_db_pool():
     """Initialize the database connection pool"""
@@ -157,6 +167,149 @@ def save_landmark(name: str, address: str, category: str, description: str,
         return False
     finally:
         release_connection(conn)
+
+def get_all_landmarks() -> List[Tuple]:
+    conn = get_connection()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""
+                SELECT id, name, address, category, description, history,
+                       ST_X(location::geometry) as longitude,
+                       ST_Y(location::geometry) as latitude,
+                       images_name
+                FROM landmark
+                ORDER BY id
+            """)
+            return cur.fetchall()
+    finally:
+        release_connection(conn)
+
+def get_landmark_by_id(landmark_id: int) -> Optional[dict]:
+    conn = get_connection()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""
+                SELECT id, name, address, category, description, history,
+                       ST_X(location::geometry) as longitude,
+                       ST_Y(location::geometry) as latitude,
+                       images_name
+                FROM landmark
+                WHERE id = %s
+            """, (landmark_id,))
+            row = cur.fetchone()
+            if row:
+                return {
+                    'id': row[0],
+                    'name': row[1],
+                    'address': row[2],
+                    'category': row[3],
+                    'description': row[4],
+                    'history': row[5],
+                    'longitude': row[6],
+                    'latitude': row[7],
+                    'images_name': row[8],
+                }
+            return None
+    finally:
+        release_connection(conn)
+
+def delete_landmark_by_id(landmark_id: int) -> bool:
+    conn = get_connection()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("DELETE FROM landmark WHERE id = %s", (landmark_id,))
+            conn.commit()
+            return cur.rowcount > 0
+    except Exception as e:
+        conn.rollback()
+        logger.error(f"Error deleting landmark id={landmark_id}: {e}")
+        return False
+    finally:
+        release_connection(conn)
+
+def update_landmark(landmark_id: int, name: str = None, address: str = None, 
+                   category: str = None, description: str = None, 
+                   history: str = None, longitude: float = None, 
+                   latitude: float = None, images_name: str = None) -> bool:
+    """
+    Обновляет данные достопримечательности.
+    Параметры, которые не нужно обновлять, передаются как None.
+    """
+    logger.info(f"Updating landmark id={landmark_id}")
+    
+    # Получаем текущие данные
+    current_data = get_landmark_by_id(landmark_id)
+    if not current_data:
+        return False
+    
+    # Подготавливаем данные для обновления
+    update_data = {
+        'name': name if name is not None else current_data['name'],
+        'address': address if address is not None else current_data['address'],
+        'category': category if category is not None else current_data['category'],
+        'description': description if description is not None else current_data['description'],
+        'history': history if history is not None else current_data['history'],
+        'longitude': longitude if longitude is not None else current_data['longitude'],
+        'latitude': latitude if latitude is not None else current_data['latitude'],
+        'images_name': images_name if images_name is not None else current_data['images_name']
+    }
+    
+    conn = get_connection()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""
+                UPDATE landmark
+                SET name = %s,
+                    address = %s,
+                    category = %s,
+                    description = %s,
+                    history = %s,
+                    location = ST_SetSRID(ST_MakePoint(%s, %s), 4326)::geography,
+                    images_name = %s
+                WHERE id = %s
+            """, (
+                update_data['name'],
+                update_data['address'],
+                update_data['category'],
+                update_data['description'],
+                update_data['history'],
+                update_data['longitude'],
+                update_data['latitude'],
+                update_data['images_name'],
+                landmark_id
+            ))
+            conn.commit()
+            return cur.rowcount > 0
+    except Exception as e:
+        conn.rollback()
+        logger.error(f"Error updating landmark id={landmark_id}: {e}")
+        return False
+    finally:
+        release_connection(conn)
+
+
+
+async def list_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    landmarks = get_all_landmarks()
+    if not landmarks:
+        await update.message.reply_text("Нет записей в таблице landmark.")
+        return
+    text = "Список достопримечательностей:\n"
+    for lm in landmarks:
+        text += f"ID: {lm[0]}, Название: {lm[1]}, Адрес: {lm[2]}, Категория: {lm[3]}\n"
+    await update.message.reply_text(text)
+
+async def delete_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if len(context.args) != 1 or not context.args[0].isdigit():
+        await update.message.reply_text("Использование: /delete <id>")
+        return
+    landmark_id = int(context.args[0])
+    success = delete_landmark_by_id(landmark_id)
+    if success:
+        await update.message.reply_text(f"Запись с ID {landmark_id} удалена.")
+    else:
+        await update.message.reply_text(f"Запись с ID {landmark_id} не найдена или не удалена.")
+
 
 def get_landmark_by_name(name: str) -> Optional[dict]:
     """Get landmark details by name"""
