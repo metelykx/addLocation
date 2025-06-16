@@ -12,7 +12,7 @@ from telegram.ext import (
     ConversationHandler
 )
 from telegram.error import NetworkError, TimedOut, TelegramError
-from db_config import init_db_pool, check_landmark_exists, save_landmark, save_photo, get_all_landmarks, get_landmark_by_id, delete_landmark_by_id, update_landmark
+from db_config import init_db_pool, check_landmark_exists, save_landmark, save_photo, get_all_landmarks, delete_landmark_by_id, get_landmark_by_id, update_landmark_field
 from dotenv import load_dotenv
 import asyncio
 import traceback
@@ -49,14 +49,9 @@ if not all([BOT_TOKEN, ADMIN_LOGIN, ADMIN_PASSWORD]):
     LOGIN, PASSWORD,
     NAME, ADDRESS, CATEGORY,
     DESCRIPTION, HISTORY,
-    LOCATION, PHOTOS, IMAGE_NAME
-) = range(10)
-
-# Состояния для редактирования
-(
-    EDIT_NAME, EDIT_ADDRESS, EDIT_CATEGORY, EDIT_DESCRIPTION, 
-    EDIT_HISTORY, EDIT_LOCATION, EDIT_PHOTOS, EDIT_IMAGE_NAME
-) = range(10, 18)
+    LOCATION, PHOTOS, IMAGE_NAME,
+    EDIT_FIELD, EDIT_VALUE
+) = range(12)
 
 # Хранилища данных
 authorized_users = set()
@@ -79,6 +74,18 @@ categories_keyboard = ReplyKeyboardMarkup(
         ["Концертный зал", "Необычное"],
         ["Археология", "Арт-объект"],
         ["Фонтан", "Наука"]
+    ],
+    resize_keyboard=True,
+    one_time_keyboard=True
+)
+
+# Клавиатура для выбора поля редактирования
+edit_field_keyboard = ReplyKeyboardMarkup(
+    [
+        ["Название", "Адрес"],
+        ["Категория", "Описание"],
+        ["История", "Координаты"],
+        ["Имя файла фото"]
     ],
     resize_keyboard=True,
     one_time_keyboard=True
@@ -374,6 +381,183 @@ async def image_name(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         )
         return ConversationHandler.END
 
+async def edit_landmark(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    try:
+        chat_id = update.effective_chat.id
+        if not is_authorized(chat_id):
+            await update.message.reply_text("❌ Вы не авторизованы! Используйте /start для входа.")
+            return ConversationHandler.END
+
+        args = context.args
+        if not args or not args[0].isdigit():
+            await update.message.reply_text("❌ Используйте команду так: /edit <id>")
+            return ConversationHandler.END
+
+        landmark_id = int(args[0])
+        landmark = get_landmark_by_id(landmark_id)
+        if not landmark:
+            await update.message.reply_text(f"❌ Достопримечательность с ID {landmark_id} не найдена.")
+            return ConversationHandler.END
+
+        temp_data[chat_id] = {"edit_id": landmark_id}
+        await update.message.reply_text(
+            f"📝 Редактирование достопримечательности ID {landmark_id}\n"
+            f"Текущие данные:\n"
+            f"<b>Название:</b> {landmark['name']}\n"
+            f"<b>Адрес:</b> {landmark['address']}\n"
+            f"<b>Категория:</b> {landmark['category']}\n"
+            f"<b>Описание:</b> {landmark['description']}\n"
+            f"<b>История:</b> {landmark['history']}\n"
+            f"<b>Координаты:</b> {landmark['latitude']:.6f}, {landmark['longitude']:.6f}\n"
+            f"<b>Имя файла:</b> {landmark['images_name']}\n\n"
+            "Выберите поле для редактирования:",
+            parse_mode="HTML",
+            reply_markup=edit_field_keyboard
+        )
+        return EDIT_FIELD
+    except Exception as e:
+        logger.error(f"Error in edit_landmark handler: {e}")
+        await update.message.reply_text(
+            "Произошла ошибка. Пожалуйста, попробуйте снова или обратитесь к администратору."
+        )
+        return ConversationHandler.END
+
+async def edit_field(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    try:
+        chat_id = update.effective_chat.id
+        field = update.message.text
+
+        field_map = {
+            "Название": "name",
+            "Адрес": "address",
+            "Категория": "category",
+            "Описание": "description",
+            "История": "history",
+            "Координаты": "location",
+            "Имя файла фото": "images_name"
+        }
+
+        if field not in field_map:
+            await update.message.reply_text(
+                "❌ Неверное поле. Пожалуйста, выберите поле из предложенных:",
+                reply_markup=edit_field_keyboard
+            )
+            return EDIT_FIELD
+
+        temp_data[chat_id]["edit_field"] = field_map[field]
+        
+        if field == "Категория":
+            await update.message.reply_text(
+                "📌 Выберите новую категорию:",
+                reply_markup=categories_keyboard
+            )
+        elif field == "Координаты":
+            await update.message.reply_text(
+                "📍 Введите новые координаты в формате:\n"
+                "<i>широта, долгота</i>\n\n"
+                "Пример: <code>44.511777, 34.233452</code>",
+                parse_mode="HTML",
+                reply_markup=ReplyKeyboardRemove()
+            )
+        elif field == "Имя файла фото":
+            await update.message.reply_text(
+                "📸 Отправьте новую фотографию достопримечательности:"
+            )
+            temp_data[chat_id]["awaiting_photo"] = True
+            return EDIT_VALUE
+        else:
+            await update.message.reply_text(
+                f"📝 Введите новое значение для поля '{field}':",
+                reply_markup=ReplyKeyboardRemove()
+            )
+
+        return EDIT_VALUE
+    except Exception as e:
+        logger.error(f"Error in edit_field handler: {e}")
+        await update.message.reply_text(
+            "Произошла ошибка. Пожалуйста, попробуйте снова или обратитесь к администратору."
+        )
+        return ConversationHandler.END
+
+async def edit_value(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    try:
+        chat_id = update.effective_chat.id
+        landmark_id = temp_data[chat_id]["edit_id"]
+        field = temp_data[chat_id]["edit_field"]
+
+        if "awaiting_photo" in temp_data[chat_id] and temp_data[chat_id]["awaiting_photo"]:
+            photos = update.message.photo
+            if not photos:
+                await update.message.reply_text("❌ Пожалуйста, отправьте фотографию.")
+                return EDIT_VALUE
+
+            photo = max(photos, key=lambda x: x.file_size)
+            temp_data[chat_id]["photo"] = photo.file_id
+            await update.message.reply_text(
+                "📝 Введите новое имя файла для фотографии (например: landmark_photo.jpg):"
+            )
+            temp_data[chat_id]["awaiting_photo"] = False
+            return EDIT_VALUE
+
+        if field == "images_name":
+            images_name = update.message.text
+            if not await save_photo(context.bot, temp_data[chat_id]["photo"], images_name):
+                await update.message.reply_text(
+                    "❌ Ошибка при сохранении фотографии. Попробуйте позже.",
+                    reply_markup=continue_keyboard
+                )
+                return ConversationHandler.END
+            success = update_landmark_field(landmark_id, field, images_name)
+        elif field == "location":
+            try:
+                lat, lon = map(str.strip, update.message.text.split(','))
+                lat = float(lat)
+                lon = float(lon)
+                if not (-90 <= lat <= 90) or not (-180 <= lon <= 180):
+                    raise ValueError("Неверный диапазон координат")
+                success = update_landmark_field(landmark_id, field, (lat, lon))
+            except (ValueError, IndexError):
+                await update.message.reply_text(
+                    "❌ Неверный формат координат. Пожалуйста, введите в формате:\n"
+                    "<i>широта, долгота</i>\n\n"
+                    "Пример: <code>44.511777, 34.233452</code>",
+                    parse_mode="HTML"
+                )
+                return EDIT_VALUE
+        else:
+            success = update_landmark_field(landmark_id, field, update.message.text)
+
+        if success:
+            landmark = get_landmark_by_id(landmark_id)
+            await update.message.reply_text(
+                f"✅ Поле успешно обновлено!\n\n"
+                f"<b>Название:</b> {landmark['name']}\n"
+                f"<b>Адрес:</b> {landmark['address']}\n"
+                f"<b>Категория:</b> {landmark['category']}\n"
+                f"<b>Описание:</b> {landmark['description']}\n"
+                f"<b>История:</b> {landmark['history']}\n"
+                f"<b>Координаты:</b> {landmark['latitude']:.6f}, {landmark['longitude']:.6f}\n"
+                f"<b>Имя файла:</b> {landmark['images_name']}\n\n"
+                "Хотите добавить еще одну достопримечательность?",
+                parse_mode="HTML",
+                reply_markup=continue_keyboard
+            )
+        else:
+            await update.message.reply_text(
+                "❌ Ошибка при обновлении поля. Попробуйте снова.",
+                reply_markup=continue_keyboard
+            )
+
+        if chat_id in temp_data:
+            del temp_data[chat_id]
+        return ConversationHandler.END
+    except Exception as e:
+        logger.error(f"Error in edit_value handler: {e}")
+        await update.message.reply_text(
+            "Произошла ошибка. Пожалуйста, попробуйте снова или обратитесь к администратору."
+        )
+        return ConversationHandler.END
+
 async def continue_adding(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     try:
         if is_authorized(update.effective_chat.id):
@@ -482,157 +666,16 @@ async def delete_landmark(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         logger.error(f"Error in delete_landmark handler: {e}")
         await update.message.reply_text("Ошибка при удалении достопримечательности.")
 
-# Редактирование достопримечательности
-async def edit_landmark_start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    try:
-        chat_id = update.effective_chat.id
-
-        if not is_authorized(chat_id):
-            await update.message.reply_text("❌ Вы не авторизованы! Используйте /start для входа.")
-            return ConversationHandler.END
-
-        args = context.args
-        if not args or not args[0].isdigit():
-            await update.message.reply_text("❌ Используйте команду так: /edit <id>")
-            return ConversationHandler.END
-
-        landmark_id = int(args[0])
-        landmark = get_landmark_by_id(landmark_id)
-
-        if not landmark:
-            await update.message.reply_text(f"❌ Достопримечательность с ID {landmark_id} не найдена.")
-            return ConversationHandler.END
-
-        # Сохраняем данные для редактирования
-        context.user_data['editing_landmark'] = {
-            'id': landmark_id,
-            'current_data': landmark
-        }
-
-        await update.message.reply_text(
-            f"🔧 Редактирование достопримечательности *{landmark['name']}* (ID: {landmark_id}).\n\n"
-            "Выберите, что хотите изменить:\n"
-            "1. /edit_name - Изменить название\n"
-            "2. /edit_address - Изменить адрес\n"
-            "3. /edit_category - Изменить категорию\n"
-            "4. /edit_description - Изменить описание\n"
-            "5. /edit_history - Изменить историческую справку\n"
-            "6. /edit_location - Изменить координаты\n"
-            "7. /edit_photo - Изменить фотографию\n"
-            "8. /edit_image_name - Изменить имя файла фото\n\n"
-            "Или /cancel_edit для отмены",
-            parse_mode='Markdown'
-        )
-        return ConversationHandler.END
-
-    except Exception as e:
-        logger.error(f"Ошибка в edit_landmark_start: {e}")
-        await update.message.reply_text("⚠️ Произошла ошибка при запуске редактирования.")
-        return ConversationHandler.END
-    
-
-EDIT_NAME, EDIT_ADDRESS, EDIT_CATEGORY, EDIT_DESCRIPTION, EDIT_HISTORY, EDIT_LONGITUDE, EDIT_LATITUDE, EDIT_IMAGES_NAME = range(8)
-
-async def edit_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if len(context.args) != 1 or not context.args[0].isdigit():
-        await update.message.reply_text("Использование: /edit <id>")
-        return ConversationHandler.END
-    landmark_id = int(context.args[0])
-    landmark = get_landmark_by_id(landmark_id)
-    if not landmark:
-        await update.message.reply_text(f"Запись с ID {landmark_id} не найдена.")
-        return ConversationHandler.END
-    
-    context.user_data['edit'] = landmark
-    await update.message.reply_text(f"Редактируем запись ID {landmark_id}.\n"
-                                    f"Текущее имя: {landmark['name']}\n"
-                                    f"Введите новое имя:")
-    return EDIT_NAME
-
-async def edit_name(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    context.user_data['edit']['name'] = update.message.text
-    await update.message.reply_text("Введите новый адрес:")
-    return EDIT_ADDRESS
-
-async def edit_address(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    context.user_data['edit']['address'] = update.message.text
-    await update.message.reply_text("Введите новую категорию:")
-    return EDIT_CATEGORY
-
-async def edit_category(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    context.user_data['edit']['category'] = update.message.text
-    await update.message.reply_text("Введите новое описание:")
-    return EDIT_DESCRIPTION
-
-async def edit_description(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    context.user_data['edit']['description'] = update.message.text
-    await update.message.reply_text("Введите новую историю:")
-    return EDIT_HISTORY
-
-async def edit_history(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    context.user_data['edit']['history'] = update.message.text
-    await update.message.reply_text("Введите долготу (число с точкой):")
-    return EDIT_LONGITUDE
-
-async def edit_longitude(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    try:
-        longitude = float(update.message.text)
-        context.user_data['edit']['longitude'] = longitude
-    except ValueError:
-        await update.message.reply_text("Неверный формат долготы, введите число с точкой:")
-        return EDIT_LONGITUDE
-    await update.message.reply_text("Введите широту (число с точкой):")
-    return EDIT_LATITUDE
-
-async def edit_latitude(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    try:
-        latitude = float(update.message.text)
-        context.user_data['edit']['latitude'] = latitude
-    except ValueError:
-        await update.message.reply_text("Неверный формат широты, введите число с точкой:")
-        return EDIT_LATITUDE
-    await update.message.reply_text("Введите имя файла изображения (оставьте пустым, если без изменений):")
-    return EDIT_IMAGES_NAME
-
-async def edit_images_name(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    images_name = update.message.text.strip()
-    if images_name:
-        context.user_data['edit']['images_name'] = images_name
-    else:
-        # Оставить старое имя
-        pass
-
-    data = context.user_data['edit']
-    success = update_landmark(
-        data['id'],
-        data['name'],
-        data['address'],
-        data['category'],
-        data['description'],
-        data['history'],
-        data['longitude'],
-        data['latitude'],
-        data.get('images_name', '')
-    )
-    if success:
-        await update.message.reply_text(f"Запись ID {data['id']} успешно обновлена.")
-    else:
-        await update.message.reply_text(f"Ошибка при обновлении записи ID {data['id']}.")
-
-    return ConversationHandler.END
-
-async def cancel_edit(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Редактирование отменено.")
-    return ConversationHandler.END
-
-
 def main():
     request = HTTPXRequest(proxy_url=PROXY_URL) if PROXY_URL else None
     application = Application.builder().token(BOT_TOKEN).request(request).build()
 
     # Основной конверсершн хендлер для регистрации/добавления
     conv_handler = ConversationHandler(
-        entry_points=[CommandHandler('start', start)],
+        entry_points=[
+            CommandHandler('start', start),
+            CommandHandler('edit', edit_landmark)
+        ],
         states={
             LOGIN: [MessageHandler(filters.TEXT & ~filters.COMMAND, login)],
             PASSWORD: [MessageHandler(filters.TEXT & ~filters.COMMAND, password)],
@@ -644,6 +687,11 @@ def main():
             LOCATION: [MessageHandler(filters.TEXT & ~filters.COMMAND, location)],
             PHOTOS: [MessageHandler(filters.PHOTO, photos)],
             IMAGE_NAME: [MessageHandler(filters.TEXT & ~filters.COMMAND, image_name)],
+            EDIT_FIELD: [MessageHandler(filters.TEXT & ~filters.COMMAND, edit_field)],
+            EDIT_VALUE: [
+                MessageHandler(filters.PHOTO, edit_value),
+                MessageHandler(filters.TEXT & ~filters.COMMAND, edit_value)
+            ]
         },
         fallbacks=[
             CommandHandler('cancel', cancel), 
@@ -651,20 +699,6 @@ def main():
         ]
     )
     application.add_handler(conv_handler)
-
-    # Хендлер для редактирования
-    edit_conv_handler = ConversationHandler(
-        entry_points=[CommandHandler('edit', edit_landmark_start)],
-        states={
-            EDIT_NAME: [MessageHandler(filters.TEXT & ~filters.COMMAND, edit_name)],
-            EDIT_ADDRESS: [MessageHandler(filters.TEXT & ~filters.COMMAND, edit_address)],
-            EDIT_CATEGORY: [MessageHandler(filters.TEXT & ~filters.COMMAND, edit_category)],
-            EDIT_DESCRIPTION: [MessageHandler(filters.TEXT & ~filters.COMMAND, edit_description)],
-            EDIT_HISTORY: [MessageHandler(filters.TEXT & ~filters.COMMAND, edit_history)],
-        },
-        fallbacks=[CommandHandler('cancel', cancel_edit)]
-    )
-    application.add_handler(edit_conv_handler)
 
     # Другие команды
     application.add_handler(CommandHandler("list", list_landmarks))

@@ -71,9 +71,9 @@ def init_db_pool():
             10,  # maxconn
             **DB_CONFIG
         )
-        logging.info("Database connection pool initialized successfully")
+        logger.info("Database connection pool initialized successfully")
     except Exception as e:
-        logging.error(f"Error initializing database connection pool: {e}")
+        logger.error(f"Error initializing database connection pool: {e}")
         raise
 
 def get_connection():
@@ -92,7 +92,12 @@ def check_landmark_exists(name: str) -> bool:
     try:
         with conn.cursor() as cur:
             cur.execute("SELECT EXISTS(SELECT 1 FROM landmark WHERE name = %s)", (name,))
-            return cur.fetchone()[0]
+            exists = cur.fetchone()[0]
+            logger.info(f"Checked landmark existence for name '{name}': {exists}")
+            return exists
+    except Exception as e:
+        logger.error(f"Error checking landmark existence for name '{name}': {e}")
+        raise
     finally:
         release_connection(conn)
 
@@ -105,9 +110,10 @@ async def save_photo(bot: Bot, file_id: str, images_name: str) -> bool:
         # Download file
         file_path = os.path.join(IMAGES_DIR, images_name)
         await file.download_to_drive(file_path)
+        logger.info(f"Saved photo to {file_path}")
         return True
     except Exception as e:
-        logging.error(f"Error saving photo: {e}")
+        logger.error(f"Error saving photo {images_name}: {e}")
         return False
 
 def sync_landmark_sequence():
@@ -130,9 +136,10 @@ def sync_landmark_sequence():
                 SELECT setval('landmark_id_seq', COALESCE((SELECT MAX(id) FROM landmark), 0));
             """)
             conn.commit()
+            logger.info("Landmark sequence synchronized")
     except Exception as e:
         conn.rollback()
-        logging.error(f"Error syncing landmark sequence: {e}")
+        logger.error(f"Error syncing landmark sequence: {e}")
     finally:
         release_connection(conn)
 
@@ -141,6 +148,7 @@ def save_landmark(name: str, address: str, category: str, description: str,
     """Save a new landmark to the database if it doesn't exist"""
     # First check if landmark exists
     if check_landmark_exists(name):
+        logger.warning(f"Landmark with name '{name}' already exists")
         return False
 
     # Sync sequence before inserting
@@ -157,13 +165,12 @@ def save_landmark(name: str, address: str, category: str, description: str,
             """, (name, address, category, description, history, longitude, latitude, images_name))
             
             landmark_id = cur.fetchone()[0]
-            
-            
             conn.commit()
+            logger.info(f"Saved new landmark ID {landmark_id}: {name}")
             return True
     except Exception as e:
         conn.rollback()
-        logging.error(f"Error saving landmark: {e}")
+        logger.error(f"Error saving landmark '{name}': {e}")
         return False
     finally:
         release_connection(conn)
@@ -180,7 +187,12 @@ def get_all_landmarks() -> List[Tuple]:
                 FROM landmark
                 ORDER BY id
             """)
-            return cur.fetchall()
+            landmarks = cur.fetchall()
+            logger.info(f"Retrieved {len(landmarks)} landmarks")
+            return landmarks
+    except Exception as e:
+        logger.error(f"Error retrieving landmarks: {e}")
+        raise
     finally:
         release_connection(conn)
 
@@ -198,7 +210,7 @@ def get_landmark_by_id(landmark_id: int) -> Optional[dict]:
             """, (landmark_id,))
             row = cur.fetchone()
             if row:
-                return {
+                landmark = {
                     'id': row[0],
                     'name': row[1],
                     'address': row[2],
@@ -209,7 +221,13 @@ def get_landmark_by_id(landmark_id: int) -> Optional[dict]:
                     'latitude': row[7],
                     'images_name': row[8],
                 }
+                logger.info(f"Retrieved landmark ID {landmark_id}: {landmark['name']}")
+                return landmark
+            logger.warning(f"Landmark ID {landmark_id} not found")
             return None
+    except Exception as e:
+        logger.error(f"Error retrieving landmark ID {landmark_id}: {e}")
+        raise
     finally:
         release_connection(conn)
 
@@ -219,7 +237,9 @@ def delete_landmark_by_id(landmark_id: int) -> bool:
         with conn.cursor() as cur:
             cur.execute("DELETE FROM landmark WHERE id = %s", (landmark_id,))
             conn.commit()
-            return cur.rowcount > 0
+            deleted = cur.rowcount > 0
+            logger.info(f"Landmark ID {landmark_id} deletion: {'successful' if deleted else 'not found'}")
+            return deleted
     except Exception as e:
         conn.rollback()
         logger.error(f"Error deleting landmark id={landmark_id}: {e}")
@@ -227,89 +247,70 @@ def delete_landmark_by_id(landmark_id: int) -> bool:
     finally:
         release_connection(conn)
 
-def update_landmark(landmark_id: int, name: str = None, address: str = None, 
-                   category: str = None, description: str = None, 
-                   history: str = None, longitude: float = None, 
-                   latitude: float = None, images_name: str = None) -> bool:
-    """
-    Обновляет данные достопримечательности.
-    Параметры, которые не нужно обновлять, передаются как None.
-    """
-    logger.info(f"Updating landmark id={landmark_id}")
-    
-    # Получаем текущие данные
-    current_data = get_landmark_by_id(landmark_id)
-    if not current_data:
-        return False
-    
-    # Подготавливаем данные для обновления
-    update_data = {
-        'name': name if name is not None else current_data['name'],
-        'address': address if address is not None else current_data['address'],
-        'category': category if category is not None else current_data['category'],
-        'description': description if description is not None else current_data['description'],
-        'history': history if history is not None else current_data['history'],
-        'longitude': longitude if longitude is not None else current_data['longitude'],
-        'latitude': latitude if latitude is not None else current_data['latitude'],
-        'images_name': images_name if images_name is not None else current_data['images_name']
-    }
-    
+def update_landmark_field(landmark_id: int, field: str, value: any) -> bool:
+    """Update a specific field of a landmark by ID"""
     conn = get_connection()
     try:
         with conn.cursor() as cur:
-            cur.execute("""
-                UPDATE landmark
-                SET name = %s,
-                    address = %s,
-                    category = %s,
-                    description = %s,
-                    history = %s,
-                    location = ST_SetSRID(ST_MakePoint(%s, %s), 4326)::geography,
-                    images_name = %s
-                WHERE id = %s
-            """, (
-                update_data['name'],
-                update_data['address'],
-                update_data['category'],
-                update_data['description'],
-                update_data['history'],
-                update_data['longitude'],
-                update_data['latitude'],
-                update_data['images_name'],
-                landmark_id
-            ))
+            if field == "location":
+                latitude, longitude = value
+                cur.execute("""
+                    UPDATE landmark 
+                    SET location = ST_SetSRID(ST_MakePoint(%s, %s), 4326)::geography
+                    WHERE id = %s
+                """, (longitude, latitude, landmark_id))
+            elif field == "name" and check_landmark_exists(value):
+                logger.warning(f"Landmark with name '{value}' already exists")
+                return False
+            else:
+                cur.execute(f"""
+                    UPDATE landmark 
+                    SET {field} = %s
+                    WHERE id = %s
+                """, (value, landmark_id))
+            
             conn.commit()
-            return cur.rowcount > 0
+            updated = cur.rowcount > 0
+            logger.info(f"Updated field {field} for landmark ID {landmark_id}: {'successful' if updated else 'not found'}")
+            return updated
     except Exception as e:
         conn.rollback()
-        logger.error(f"Error updating landmark id={landmark_id}: {e}")
+        logger.error(f"Error updating landmark id={landmark_id}, field={field}: {e}")
         return False
     finally:
         release_connection(conn)
 
-
-
 async def list_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    landmarks = get_all_landmarks()
-    if not landmarks:
-        await update.message.reply_text("Нет записей в таблице landmark.")
-        return
-    text = "Список достопримечательностей:\n"
-    for lm in landmarks:
-        text += f"ID: {lm[0]}, Название: {lm[1]}, Адрес: {lm[2]}, Категория: {lm[3]}\n"
-    await update.message.reply_text(text)
+    try:
+        landmarks = get_all_landmarks()
+        if not landmarks:
+            await update.message.reply_text("Нет записей в таблице landmark.")
+            return
+        text = "Список достопримечательностей:\n"
+        for lm in landmarks:
+            text += f"ID: {lm[0]}, Название: {lm[1]}, Адрес: {lm[2]}, Категория: {lm[3]}\n"
+        await update.message.reply_text(text)
+        logger.info(f"Listed landmarks for chat_id {update.effective_chat.id}")
+    except Exception as e:
+        logger.error(f"Error in list_command: {e}")
+        await update.message.reply_text("Ошибка при получении списка достопримечательностей.")
 
 async def delete_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if len(context.args) != 1 or not context.args[0].isdigit():
-        await update.message.reply_text("Использование: /delete <id>")
-        return
-    landmark_id = int(context.args[0])
-    success = delete_landmark_by_id(landmark_id)
-    if success:
-        await update.message.reply_text(f"Запись с ID {landmark_id} удалена.")
-    else:
-        await update.message.reply_text(f"Запись с ID {landmark_id} не найдена или не удалена.")
-
+    try:
+        if len(context.args) != 1 or not context.args[0].isdigit():
+            await update.message.reply_text("Использование: /delete <id>")
+            return
+        landmark_id = int(context.args[0])
+        success = delete_landmark_by_id(landmark_id)
+        if success:
+            await update.message.reply_text(f"Запись с ID {landmark_id} удалена.")
+            logger.info(f"Landmark ID {landmark_id} deleted")
+        else:
+            await update.message.reply_text(f"Запись с ID {landmark_id} не найдена или не удалена.")
+            logger.warning(f"Landmark ID {landmark_id} not found for deletion")
+    except Exception as e:
+        logger.error(f"Error in delete_command: {e}")
+        await update.message.reply_text("Ошибка при удалении достопримечательности.")
 
 def get_landmark_by_name(name: str) -> Optional[dict]:
     """Get landmark details by name"""
@@ -327,7 +328,7 @@ def get_landmark_by_name(name: str) -> Optional[dict]:
             """, (name,))
             result = cur.fetchone()
             if result:
-                return {
+                landmark = {
                     'id': result[0],
                     'name': result[1],
                     'address': result[2],
@@ -340,6 +341,12 @@ def get_landmark_by_name(name: str) -> Optional[dict]:
                     'longitude': result[9],  # Extracted from location
                     'category_name': result[10]
                 }
+                logger.info(f"Retrieved landmark by name '{name}': ID {landmark['id']}")
+                return landmark
+            logger.warning(f"Landmark with name '{name}' not found")
             return None
+    except Exception as e:
+        logger.error(f"Error retrieving landmark by name '{name}': {e}")
+        raise
     finally:
-        release_connection(conn) 
+        release_connection(conn)
